@@ -21,11 +21,6 @@ public class Vasember extends Bosszuallo implements Milliardos{
     }
 
     @Override
-    public void gyogyul() {
-
-    }
-
-    @Override
     public String toString() {
         return "Vasember: " + super.toString();
     }

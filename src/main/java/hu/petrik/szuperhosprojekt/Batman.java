@@ -25,11 +25,6 @@ public class Batman implements Szuperhos, Milliardos{
     }
 
     @Override
-    public void gyogyul() {
-
-    }
-
-    @Override
     public String toString() {
         return String.format("Batman: leleményesség: %.2f", this.lelemenyesseg);
     }

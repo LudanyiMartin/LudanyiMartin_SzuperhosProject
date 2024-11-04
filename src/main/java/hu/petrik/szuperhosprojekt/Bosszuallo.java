@@ -51,9 +51,4 @@ public abstract class Bosszuallo implements Szuperhos{
     public String toString() {
         return String.format("Szupererő: %.2f; %s gyengesége", szuperero, vanEGyengesege ? "van" : "nincs");
     }
-
-    @Override
-    public void gyogyul() {
-
-    }
 }
