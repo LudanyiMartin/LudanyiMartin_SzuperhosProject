@@ -1,5 +1,7 @@
 package hu.petrik.szuperhosprojekt;
 
+import java.text.MessageFormat;
+
 public abstract class Bosszuallo implements Szuperhos{
     private double szuperero;
     private boolean vanEGyengesege;
@@ -49,6 +51,6 @@ public abstract class Bosszuallo implements Szuperhos{
 
     @Override
     public String toString() {
-        return String.format("Szupererő: %.2f; %s gyengesége", szuperero, vanEGyengesege ? "van" : "nincs");
+        return MessageFormat.format("Szupererő: {0}; {1}", this.szuperero, vanEGyengesege ? "van gyengesége" : "nincs gyengesége");
     }
 }

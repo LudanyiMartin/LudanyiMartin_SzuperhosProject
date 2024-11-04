@@ -13,7 +13,7 @@ public class Kepregeny {
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             String line;
             while ((line = br.readLine()) != null) {
-                String[] parts = line.split(";");
+                String[] parts = line.split(" ");
                 String type = parts[0];
                 int count = Integer.parseInt(parts[1]);
 

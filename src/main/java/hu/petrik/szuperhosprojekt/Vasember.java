@@ -1,5 +1,6 @@
 package hu.petrik.szuperhosprojekt;
 
+import java.text.MessageFormat;
 import java.util.Random;
 
 public class Vasember extends Bosszuallo implements Milliardos{
@@ -22,6 +23,6 @@ public class Vasember extends Bosszuallo implements Milliardos{
 
     @Override
     public String toString() {
-        return "Vasember: " + this.getSzuperero();
+        return MessageFormat.format("Vasember: Szupererő: {0}; {1}", this.getSzuperero(), this.isVanEGyengesege() ? "van gyengesége" : "nincs gyengesége");
     }
 }

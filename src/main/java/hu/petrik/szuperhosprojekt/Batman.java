@@ -1,5 +1,7 @@
 package hu.petrik.szuperhosprojekt;
 
+import java.text.MessageFormat;
+
 public class Batman implements Szuperhos, Milliardos{
     private double lelemenyesseg;
 
@@ -26,6 +28,6 @@ public class Batman implements Szuperhos, Milliardos{
 
     @Override
     public String toString() {
-        return String.format("Batman: leleményesség: %.2f", this.lelemenyesseg);
+        return MessageFormat.format("Batman: leleményesség: {0}", this.lelemenyesseg);
     }
 }
