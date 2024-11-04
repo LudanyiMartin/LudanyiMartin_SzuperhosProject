@@ -27,7 +27,7 @@ public abstract class Bosszuallo implements Szuperhos{
     }
 
     @Override
-    public int mekkoraAzEreje() {
+    public double mekkoraAzEreje() {
         return (int) this.szuperero;
     }
 
@@ -50,5 +50,10 @@ public abstract class Bosszuallo implements Szuperhos{
     @Override
     public String toString() {
         return String.format("Szupererő: %.2f; %s gyengesége", szuperero, vanEGyengesege ? "van" : "nincs");
+    }
+
+    @Override
+    public void gyogyul() {
+
     }
 }

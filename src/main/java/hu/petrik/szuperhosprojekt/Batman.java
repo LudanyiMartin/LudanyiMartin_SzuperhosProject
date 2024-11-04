@@ -8,7 +8,7 @@ public class Batman implements Szuperhos, Milliardos{
     }
 
     @Override
-    public int mekkoraAzEreje() {
+    public double mekkoraAzEreje() {
         return (int) (this.lelemenyesseg * 2);
     }
 
